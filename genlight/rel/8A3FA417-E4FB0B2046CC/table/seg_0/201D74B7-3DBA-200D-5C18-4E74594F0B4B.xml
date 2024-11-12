@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="201D74B7-3DBA-200D-5C18-4E74594F0B4B" name="T_GL_SITIO">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>A2DA12A0-497F-8F28-2DB2-68FFCCDBA6C1</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sitio" id="9AFE66B5-D068-9B63-EF97-39CA1B818017">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>356FB419-44E7-CA7C-37B4-0C245B567C60</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_fonte" id="75A392AD-3DF3-7DA1-94C8-18842D4786A4">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>F231657A-5EB5-6A29-73D0-07E19DC4A7AB</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<listOfValues>
+<valueDef value="1" description="Energia Solar"/>
+<valueDef value="2" description="Energia Eólica"/>
+</listOfValues>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_GL_INDUSTRIA_id_industria" id="6BAC8AC4-5F28-8443-7C3B-7EE5B456DF61">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>CE2F099C-54DD-D131-E1DE-BAF86378E074</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="820DE2D2-E256-A70C-7CC6-D051BFCF8EED" referredColumn="1E848C0D-D8B2-2D1C-8A16-921892050EC4"/>
+</associations>
+</Column>
+<Column name="T_GL_ENDERECO_id_endereco" id="960F505E-2084-4685-D6A3-BD7C29DF9998">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>6304168F-EF29-5A09-DDC9-C01A5255F568</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F0236BE-1F78-CFC0-7130-F9BBA83E10B3" referredColumn="800F06EA-EA96-6CEF-7315-2EC09F0E3944"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD7E46B6-14E6-1300-68F4-25B9BA4D6300" name="T_GL_SITIO_PK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>C9967E4D-2957-2223-2850-E3F654FFAAEB</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AFE66B5-D068-9B63-EF97-39CA1B818017"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E0FDE04-9F49-8775-A2F1-65D62E402B88" name="T_GL_SITIO_T_GL_INDUSTRIA_FK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>8A8C4A3F-C85F-C7B5-7DE5-2884BB1D1DCD</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BAC8AC4-5F28-8443-7C3B-7EE5B456DF61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2C50EB5-9CA7-496A-E5EA-4FB5D3723EA2" name="T_GL_SITIO_T_GL_ENDERECO_FK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>9FA7E3BD-EAF2-8B1A-9B6A-7188086C5AF1</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="960F505E-2084-4685-D6A3-BD7C29DF9998"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SITIO_ENDERECO" directorySegmentName="seg_0" id="9FA7E3BD-EAF2-8B1A-9B6A-7188086C5AF1">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:18:53 UTC</createdTime>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<sourcePk>9EC3573A-5F4F-045D-771F-C2140B008CB2</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9A74E7E9-04FF-FA52-CB1B-E9D9686FD947</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A2DA12A0-497F-8F28-2DB2-68FFCCDBA6C1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

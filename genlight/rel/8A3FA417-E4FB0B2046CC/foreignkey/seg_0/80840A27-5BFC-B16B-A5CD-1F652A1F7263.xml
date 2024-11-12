@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="80840A27-5BFC-B16B-A5CD-1F652A1F7263" containerWithKeyObject="45F7288D-4967-E4CA-EA2D-28F5DD97206C" localFKIndex="504FE530-5378-6EDF-C455-FC3547A0E037" name="T_GL_APARELHO_GERADOR_T_GL_SITIO_FK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>97836F33-B285-C7E7-375E-1C3308E246ED</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<referredTableLongName>T_GL_SITIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>201D74B7-3DBA-200D-5C18-4E74594F0B4B</referredTableID>
+<keyObject>CD7E46B6-14E6-1300-68F4-25B9BA4D6300</keyObject>
+<referredKeyID>CD7E46B6-14E6-1300-68F4-25B9BA4D6300</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_sitio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

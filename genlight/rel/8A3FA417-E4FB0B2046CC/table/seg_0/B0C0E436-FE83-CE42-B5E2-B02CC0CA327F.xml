@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0C0E436-FE83-CE42-B5E2-B02CC0CA327F" name="T_GL_MAQUINA">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>7BC14A2D-97CD-BD46-AE82-75A8071B161B</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_maquina" id="6C095CA4-D66E-2525-306B-927F3266A686">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>65BBCCAF-025F-15C9-EA3B-EB9AE4F802D9</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="consumo" id="65B74FA7-02E1-3799-2421-230B580C7D4B">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>8AB11AC2-28ED-F003-9517-A4F1E5325BFF</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_maquina" id="B56B3389-2B2E-594C-3DA1-596F1F8F481D">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[					]]></commentInRDBMS>
+<generatorID>4C384701-F7B4-F56E-FD67-DD5BE3AD8933</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_GL_SITIO_id_sitio" id="C08D2429-D2A5-850B-2C03-8F294ADD1114">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>1C1AB576-5E97-54F7-B48D-4738248CD7FD</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F45F656A-A26C-FF9A-2DF0-8ECF276E3F18" referredColumn="9AFE66B5-D068-9B63-EF97-39CA1B818017"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8BE56FB6-D4A8-2741-63D5-72880456FB77" name="T_GL_MAQUINA_PK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>7F573D73-CA6E-C8EF-AA53-1DC374D0D365</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C095CA4-D66E-2525-306B-927F3266A686"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="959D20C4-EB4D-1542-CC47-FF523D925EF0" name="T_GL_MAQUINA_T_GL_SITIO_FK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>3B81C064-740A-CC63-A192-9932F427A3E1</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C08D2429-D2A5-850B-2C03-8F294ADD1114"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

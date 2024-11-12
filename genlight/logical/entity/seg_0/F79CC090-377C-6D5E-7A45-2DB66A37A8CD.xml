@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F79CC090-377C-6D5E-7A45-2DB66A37A8CD" name="T_GENLIGHT_USUARIO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F79CC090-377C-6D5E-7A45-2DB66A37A8CD" name="T_GL_EMPRESA">
 <createdBy>labsfiap</createdBy>
 <createdTime>2024-11-12 11:46:13 UTC</createdTime>
 <ownerDesignName>genlight</ownerDesignName>
@@ -15,6 +15,19 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_empresa" id="B4E1E19D-34F7-2372-D1DF-B78C28F3C9DB">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 20:56:58 UTC</createdTime>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="nm_empresa" id="1B3DF7CE-85C2-83FF-0AAF-4B6C0AF890C4">
 <createdBy>labsfiap</createdBy>
 <createdTime>2024-11-12 11:58:49 UTC</createdTime>
@@ -67,6 +80,21 @@
 <dataTypeSize>12</dataTypeSize>
 <ownDataTypeParameters>12,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_endereco" id="13517265-89AD-28FD-E0E6-F437C8898021">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:17:32 UTC</createdTime>
+<generatorID>9603A61A-1BB6-B704-5A0D-F65BA9EF2C81</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<referedAttribute>0AB5E65E-5FAD-EE5E-DD23-0B5369F1770A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E6042674-2C5C-61CD-AAE2-F8127134C50A" name="CADASTRO PK">
@@ -78,7 +106,8 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>31BECAF7-7E44-A693-B77A-68D072C650B0</attributeRef>
+<attributeRef>B4E1E19D-34F7-2372-D1DF-B78C28F3C9DB</attributeRef>
+<attributeRef>13517265-89AD-28FD-E0E6-F437C8898021</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

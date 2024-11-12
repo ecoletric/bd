@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB89E5EE-5703-19DC-B51F-CE5E5D10C038" name="T_GL_INDUSTRIA">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>2BE000B2-35EB-6743-B147-68A6CECC24B9</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_industria" id="1E848C0D-D8B2-2D1C-8A16-921892050EC4">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>9174EDFD-08C1-C14D-2C93-DC3C5FC24620</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_industria" id="EEF2EAE2-CC56-DF58-A282-FCA547352B70">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>0CD547EA-3E31-DD63-CBC7-7848C609C351</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_GL_EMPRESA_id_empresa" id="D171EB44-756D-E7D3-E618-3A8A1FD89E77">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>F795D0A0-2ED7-675D-19C6-4C70ED27497F</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36EA0440-79F2-D3B1-4EB4-6388295A42C2" referredColumn="8A57B49E-BD69-FBC1-BA5D-798FF7D29AAB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF4DD671-4856-AAC2-218A-6670590A6203" name="T_GL_INDUSTRIA_PK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>2A4944F3-C1E2-7910-83D7-9C6049B48B25</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E848C0D-D8B2-2D1C-8A16-921892050EC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C834109D-9739-973E-4826-94EE3ADAD4FA" name="T_GL_INDUSTRIA_T_GL_EMPRESA_FK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>7DA7DE05-FF94-4962-31D0-8412F73BFD3E</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D171EB44-756D-E7D3-E618-3A8A1FD89E77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

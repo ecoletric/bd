@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC0E66FA-F0C2-C591-DDE4-8E4171FCE022" name="T_GL_EMPRESA">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>F79CC090-377C-6D5E-7A45-2DB66A37A8CD</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_empresa" id="8A57B49E-BD69-FBC1-BA5D-798FF7D29AAB">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>B4E1E19D-34F7-2372-D1DF-B78C28F3C9DB</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_empresa" id="49F0C435-F47E-E29E-D309-C81D4D48B714">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>1B3DF7CE-85C2-83FF-0AAF-4B6C0AF890C4</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_cnpj" id="4242FE0E-DFB3-C2FF-080E-A00A7ED0E684">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>31BECAF7-7E44-A693-B77A-68D072C650B0</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="498F2F97-6EF6-E49A-69BE-26939D397972">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>99E055F5-A82C-82EA-0EFE-D1A187AB8CD0</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha" id="DB943E18-CF41-417F-B458-386483632E04">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>DB1DA572-097B-5503-E372-3F7C516875DD</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_GL_ENDERECO_id_endereco" id="7210BE3E-30E3-5F6C-DD2C-153ABC351498">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>13517265-89AD-28FD-E0E6-F437C8898021</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF77BDBB-82EA-953E-E971-9F02CFF2B786" referredColumn="800F06EA-EA96-6CEF-7315-2EC09F0E3944"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="80C7047D-DBE9-7D6C-8E51-1827C27A5B81" name="T_GL_EMPRESA_PK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>E6042674-2C5C-61CD-AAE2-F8127134C50A</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A57B49E-BD69-FBC1-BA5D-798FF7D29AAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B9446EF-1B45-EE52-12BA-D0EC62D73F13" name="T_GL_EMPRESA_T_GL_ENDERECO_FK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>9603A61A-1BB6-B704-5A0D-F65BA9EF2C81</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7210BE3E-30E3-5F6C-DD2C-153ABC351498"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

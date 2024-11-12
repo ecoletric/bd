@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="820DE2D2-E256-A70C-7CC6-D051BFCF8EED" containerWithKeyObject="201D74B7-3DBA-200D-5C18-4E74594F0B4B" localFKIndex="0E0FDE04-9F49-8775-A2F1-65D62E402B88" name="T_GL_SITIO_T_GL_INDUSTRIA_FK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>8A8C4A3F-C85F-C7B5-7DE5-2884BB1D1DCD</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<referredTableLongName>T_GL_INDUSTRIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EB89E5EE-5703-19DC-B51F-CE5E5D10C038</referredTableID>
+<keyObject>CF4DD671-4856-AAC2-218A-6670590A6203</keyObject>
+<referredKeyID>CF4DD671-4856-AAC2-218A-6670590A6203</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_industria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

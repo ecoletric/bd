@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5F0236BE-1F78-CFC0-7130-F9BBA83E10B3" containerWithKeyObject="201D74B7-3DBA-200D-5C18-4E74594F0B4B" localFKIndex="A2C50EB5-9CA7-496A-E5EA-4FB5D3723EA2" name="T_GL_SITIO_T_GL_ENDERECO_FK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>9FA7E3BD-EAF2-8B1A-9B6A-7188086C5AF1</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<referredTableLongName>T_GL_ENDERECO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1FEE079F-E259-DECF-CA74-7A7BAE64D5EC</referredTableID>
+<keyObject>5699ACB5-2BB4-D908-0A4F-379ACB5D6EC9</keyObject>
+<referredKeyID>5699ACB5-2BB4-D908-0A4F-379ACB5D6EC9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_endereco</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateName>ENDERECO_SITIO</columnDependencyConstraintGenerateName>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

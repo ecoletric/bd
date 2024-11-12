@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45F7288D-4967-E4CA-EA2D-28F5DD97206C" name="T_GL_APARELHO_GERADOR">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>8EAFC2C1-0AEE-FAF1-4433-DFD8F3D525BD</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_fonte" id="C0457F82-90F0-5665-E372-BFCADE05215C">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>E1708B21-4CBB-00B2-ECA8-0B20D353FA26</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="potencia" id="3D75BDBF-F290-EFF8-FB96-D848C77F2E19">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>1B20132E-8B2F-7616-CACE-0D0F5296CCC3</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="9AC90913-1A1E-1E2A-D626-B5654E5BEBF5">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>266D67B1-43B3-3C10-8DCF-18A107F8C5BA</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<listOfValues>
+<valueDef value="1" description="Painel Solar"/>
+<valueDef value="2" description="Hélice Eólica"/>
+</listOfValues>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_GL_SITIO_id_sitio" id="08A1FD31-0C61-E5AA-281B-0C99C6D3AC4C">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>51122419-053A-EA0C-A756-92AC7898C886</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80840A27-5BFC-B16B-A5CD-1F652A1F7263" referredColumn="9AFE66B5-D068-9B63-EF97-39CA1B818017"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9929F27F-D411-2B3D-ADB6-3D13F1715014" name="T_GL_APARELHO_GERADOR_PK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>7A0E1BE4-52AC-D4A4-7514-10933EE21D19</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0457F82-90F0-5665-E372-BFCADE05215C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="504FE530-5378-6EDF-C455-FC3547A0E037" name="T_GL_APARELHO_GERADOR_T_GL_SITIO_FK">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:20:06 UTC</createdTime>
+<generatorID>97836F33-B285-C7E7-375E-1C3308E246ED</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08A1FD31-0C61-E5AA-281B-0C99C6D3AC4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

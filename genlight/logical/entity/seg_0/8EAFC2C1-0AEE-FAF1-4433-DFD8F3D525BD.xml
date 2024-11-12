@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8EAFC2C1-0AEE-FAF1-4433-DFD8F3D525BD" name="T_GENLIGHT_SOLAR">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8EAFC2C1-0AEE-FAF1-4433-DFD8F3D525BD" name="T_GL_APARELHO_GERADOR">
 <createdBy>labsfiap</createdBy>
 <createdTime>2024-11-12 14:55:43 UTC</createdTime>
 <ownerDesignName>genlight</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_painel" id="E1708B21-4CBB-00B2-ECA8-0B20D353FA26">
+<Attribute name="id_fonte" id="E1708B21-4CBB-00B2-ECA8-0B20D353FA26">
 <createdBy>labsfiap</createdBy>
 <createdTime>2024-11-12 15:08:15 UTC</createdTime>
 <ownerDesignName>genlight</ownerDesignName>
@@ -41,6 +41,98 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="tipo" id="266D67B1-43B3-3C10-8DCF-18A107F8C5BA">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 20:51:23 UTC</createdTime>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<listOfValues>
+<valueDef value="1" description="Painel Solar"/>
+<valueDef value="2" description="Hélice Eólica"/>
+</listOfValues>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sitio" id="51122419-053A-EA0C-A756-92AC7898C886">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:12:00 UTC</createdTime>
+<generatorID>97836F33-B285-C7E7-375E-1C3308E246ED</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<referedAttribute>356FB419-44E7-CA7C-37B4-0C245B567C60</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_industria" id="8B98D0D8-670E-6F00-6C77-118203493C51">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:21:04 UTC</createdTime>
+<generatorID>97836F33-B285-C7E7-375E-1C3308E246ED</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<referedAttribute>CE2F099C-54DD-D131-E1DE-BAF86378E074</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_empresa" id="5E7F3F89-BF9D-768C-B03C-D6FD89090778">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:21:04 UTC</createdTime>
+<generatorID>97836F33-B285-C7E7-375E-1C3308E246ED</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<referedAttribute>22697652-EC86-BCC6-0853-DCFCF890FFE9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_endereco" id="C9DF0A3B-D5AF-EE2F-7625-29EAE13E5A27">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:21:04 UTC</createdTime>
+<generatorID>97836F33-B285-C7E7-375E-1C3308E246ED</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<referedAttribute>6304168F-EF29-5A09-DDC9-C01A5255F568</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_endereco1" id="DBD59A56-0544-5808-B15F-447DAD8FC36A">
+<createdBy>trueo</createdBy>
+<createdTime>2024-11-12 21:21:13 UTC</createdTime>
+<generatorID>97836F33-B285-C7E7-375E-1C3308E246ED</generatorID>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<referedAttribute>85D0DCC6-72ED-253E-D327-CEB0B31328B7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="7A0E1BE4-52AC-D4A4-7514-10933EE21D19" name="T_GENLIGHT_SOLAR PK">
@@ -53,6 +145,11 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>E1708B21-4CBB-00B2-ECA8-0B20D353FA26</attributeRef>
+<attributeRef>51122419-053A-EA0C-A756-92AC7898C886</attributeRef>
+<attributeRef>8B98D0D8-670E-6F00-6C77-118203493C51</attributeRef>
+<attributeRef>5E7F3F89-BF9D-768C-B03C-D6FD89090778</attributeRef>
+<attributeRef>DBD59A56-0544-5808-B15F-447DAD8FC36A</attributeRef>
+<attributeRef>C9DF0A3B-D5AF-EE2F-7625-29EAE13E5A27</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
