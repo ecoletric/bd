@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8EAFC2C1-0AEE-FAF1-4433-DFD8F3D525BD" name="T_GENLIGHT_SOLAR">
+<createdBy>labsfiap</createdBy>
+<createdTime>2024-11-12 14:55:43 UTC</createdTime>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_painel" id="E1708B21-4CBB-00B2-ECA8-0B20D353FA26">
+<createdBy>labsfiap</createdBy>
+<createdTime>2024-11-12 15:08:15 UTC</createdTime>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="potencia" id="1B20132E-8B2F-7616-CACE-0D0F5296CCC3">
+<createdBy>labsfiap</createdBy>
+<createdTime>2024-11-12 15:08:35 UTC</createdTime>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7A0E1BE4-52AC-D4A4-7514-10933EE21D19" name="T_GENLIGHT_SOLAR PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2024-11-12 15:09:44 UTC</createdTime>
+<ownerDesignName>genlight</ownerDesignName>
+<engineerTo>
+<item key="8A3FA417-0301-AAD4-9AC9-E4FB0B2046CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E1708B21-4CBB-00B2-ECA8-0B20D353FA26</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

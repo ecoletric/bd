@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="9A74E7E9-04FF-FA52-CB1B-E9D9686FD947" name="T_GENLIGHT_ENDERECO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="D0BEC750-4F37-5786-1A1B-B7E617F475F7" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="7BC14A2D-97CD-BD46-AE82-75A8071B161B" name="T_GENLIGHT_MAQUINA" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="D0BEC750-4F37-5786-1A1B-B7E617F475F7" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="8EAFC2C1-0AEE-FAF1-4433-DFD8F3D525BD" name="T_GENLIGHT_SOLAR" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="D0BEC750-4F37-5786-1A1B-B7E617F475F7" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="F79CC090-377C-6D5E-7A45-2DB66A37A8CD" name="T_GENLIGHT_USUARIO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="D0BEC750-4F37-5786-1A1B-B7E617F475F7" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

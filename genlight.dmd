@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="genlight" id="5BC7699B-CAB3-857B-C437-536E552EC1CD" version="3.5">
+<createdBy>labsfiap</createdBy>
+<createdTime>2024-11-12 11:31:07 UTC</createdTime>
+<ownerDesignName>genlight</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5BC7699B-CAB3-857B-C437-536E552EC1CD</designId>
+</OSDM_Design>
