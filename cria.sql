@@ -47,7 +47,7 @@ NOCYCLE
 NOMAXVALUE;
 
 CREATE TABLE t_gl_aparelho_gerador (
-    id_fonte             NUMBER(10) NOT NULL,
+    id_fonte             NUMBER(8) NOT NULL,
     potencia             NUMBER(2) NOT NULL,
     tipo                 NUMBER(1) NOT NULL,
     id_sitio  NUMBER(8) NOT NULL
@@ -69,7 +69,7 @@ CREATE TABLE t_gl_empresa (
     nr_cnpj                    NUMBER(14) NOT NULL,
     email                      VARCHAR2(35) NOT NULL,
     senha                      VARCHAR2(12) NOT NULL,
-    id_endereco  NUMBER(10) NOT NULL
+    id_endereco                NUMBER(8) NOT NULL
 );
 
 ALTER TABLE t_gl_empresa ADD CONSTRAINT t_gl_empresa_pk PRIMARY KEY ( id_empresa );
@@ -78,7 +78,7 @@ ALTER TABLE t_gl_empresa MODIFY id_empresa DEFAULT sq_empresa.NEXTVAL;
 
 
 CREATE TABLE t_gl_endereco (
-    id_endereco     NUMBER(10) NOT NULL,
+    id_endereco     NUMBER(8) NOT NULL,
     cep             NUMBER(8) NOT NULL,
     nm_logradouro   VARCHAR(150),
     cidade          VARCHAR(150),
@@ -123,7 +123,7 @@ CREATE TABLE t_gl_sitio (
     id_sitio                     NUMBER(8) NOT NULL,
     tp_fonte                     NUMBER(1),
     id_industria                 NUMBER(8) NOT NULL,
-    id_endereco                  NUMBER(10) NOT NULL
+    id_endereco                  NUMBER(8) NOT NULL
 );
 
 ALTER TABLE t_gl_sitio
