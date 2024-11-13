@@ -24,6 +24,8 @@ DROP SEQUENCE sq_sitio;
 DROP SEQUENCE sq_endereco;
 DROP SEQUENCE sq_empresa;
 
+commit;
+
 
 
 

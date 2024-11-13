@@ -80,7 +80,11 @@ ALTER TABLE t_gl_empresa MODIFY id_empresa DEFAULT sq_empresa.NEXTVAL;
 CREATE TABLE t_gl_endereco (
     id_endereco     NUMBER(10) NOT NULL,
     cep             NUMBER(8) NOT NULL,
-    nm_logradouro   NUMBER(4),
+    nm_logradouro   VARCHAR(150),
+    cidade          VARCHAR(150),
+    bairro          VARCHAR(150),
+    uf              VARCHAR(150),
+    nr_logradouro   VARCHAR(15),
     ds_complemento  VARCHAR2(35) NOT NULL
 );
 
@@ -104,7 +108,7 @@ CREATE TABLE t_gl_maquina (
     id_maquina           NUMBER(8) NOT NULL,
     consumo              NUMBER(5) NOT NULL,
     ds_maquina           VARCHAR2(50) NOT NULL,
-    id_sitio  NUMBER(8) NOT NULL
+    id_sitio             NUMBER(8) NOT NULL
 );
 
 COMMENT ON COLUMN t_gl_maquina.ds_maquina IS
@@ -118,12 +122,13 @@ ALTER TABLE t_gl_maquina MODIFY id_maquina DEFAULT sq_maquina.NEXTVAL;
 CREATE TABLE t_gl_sitio (
     id_sitio                     NUMBER(8) NOT NULL,
     tp_fonte                     NUMBER(1),
-    id_industria  NUMBER(8) NOT NULL,
-    id_endereco    NUMBER(10) NOT NULL
+    id_industria                 NUMBER(8) NOT NULL,
+    id_endereco                  NUMBER(10) NOT NULL
 );
 
 ALTER TABLE t_gl_sitio
     ADD CHECK ( tp_fonte IN (
+        0,
         1,
         2
     ) );
@@ -156,7 +161,7 @@ ALTER TABLE t_gl_sitio
     ADD CONSTRAINT t_gl_sitio_t_gl_industria_fk FOREIGN KEY ( id_industria )
         REFERENCES t_gl_industria ( id_industria );
 
-
+commit;
 
 -- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
 -- 
