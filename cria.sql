@@ -48,7 +48,7 @@ NOMAXVALUE;
 
 CREATE TABLE t_gl_aparelho_gerador (
     id_fonte             NUMBER(8) NOT NULL,
-    potencia             NUMBER(2) NOT NULL,
+    potencia             NUMBER(6) NOT NULL,
     tipo                 NUMBER(1) NOT NULL,
     id_sitio  NUMBER(8) NOT NULL
 );
@@ -66,11 +66,15 @@ ALTER TABLE t_gl_aparelho_gerador MODIFY id_fonte DEFAULT sq_gerador.NEXTVAL;
 CREATE TABLE t_gl_empresa (
     id_empresa                 NUMBER(8) NOT NULL,
     nm_empresa                 VARCHAR2(100) NOT NULL,
-    nr_cnpj                    NUMBER(14) NOT NULL,
+    nr_cnpj                    VARCHAR(14) NOT NULL,
     email                      VARCHAR2(35) NOT NULL,
     senha                      VARCHAR2(12) NOT NULL,
     id_endereco                NUMBER(8) NOT NULL
 );
+
+ALTER TABLE t_gl_empresa ADD CONSTRAINT uq_cnpj UNIQUE (nr_cnpj);
+
+ALTER TABLE t_gl_empresa ADD CONSTRAINT uq_email UNIQUE (email);
 
 ALTER TABLE t_gl_empresa ADD CONSTRAINT t_gl_empresa_pk PRIMARY KEY ( id_empresa );
 
@@ -80,11 +84,11 @@ ALTER TABLE t_gl_empresa MODIFY id_empresa DEFAULT sq_empresa.NEXTVAL;
 CREATE TABLE t_gl_endereco (
     id_endereco     NUMBER(8) NOT NULL,
     cep             NUMBER(8) NOT NULL,
-    nm_logradouro   VARCHAR(150),
-    cidade          VARCHAR(150),
-    bairro          VARCHAR(150),
-    uf              VARCHAR(150),
-    nr_logradouro   VARCHAR(15),
+    nm_logradouro   VARCHAR(150) NOT NULL,
+    cidade          VARCHAR(150) NOT NULL,
+    bairro          VARCHAR(150) NOT NULL,
+    uf              VARCHAR(150) NOT NULL,
+    nr_logradouro   VARCHAR(15) NOT NULL,
     ds_complemento  VARCHAR2(35) NOT NULL
 );
 
@@ -121,7 +125,7 @@ ALTER TABLE t_gl_maquina MODIFY id_maquina DEFAULT sq_maquina.NEXTVAL;
 
 CREATE TABLE t_gl_sitio (
     id_sitio                     NUMBER(8) NOT NULL,
-    tp_fonte                     NUMBER(1),
+    tp_fonte                     NUMBER(1) ,
     id_industria                 NUMBER(8) NOT NULL,
     id_endereco                  NUMBER(8) NOT NULL
 );
@@ -132,6 +136,12 @@ ALTER TABLE t_gl_sitio
         1,
         2
     ) );
+    
+-- 0 -> sitio que consome energia
+-- 1 -> sitio que produz energia solar
+-- 2 -> sitio que produz energia eolica
+
+
 
 ALTER TABLE t_gl_sitio ADD CONSTRAINT t_gl_sitio_pk PRIMARY KEY ( id_sitio );
 
